@@ -7,7 +7,7 @@
     "display": "standalone",
     "start_url": "https://bhoominn.github.io/",
     "background_color": "transparent",
-    "theme_color": "transparent",
+    "theme_color": "#5865d6",
     "description": "About an engineer who loves to code",
     "orientation": "any",
     "related_applications": [],
