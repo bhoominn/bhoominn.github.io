@@ -182,11 +182,11 @@ nav ul li ul li:hover {
 /* Background color change on Hover */
 
 nav a:hover {
-    color: #EA8A95;
+    color: #6374ff;
 }
 
 .menu li.active a {
-    color: #EA8A95;
+    color: #6374ff;
 }
 
 /* Hide Dropdowns by Default
@@ -426,7 +426,7 @@ li > a:only-child:after {
     border-radius: 50%;
 }
 a.banner-button, button.submit {
-    background: #EA8A95;
+    background: #6374ff;
     color: #fff;
     letter-spacing: 1px;
     font-size: 1.5em;
@@ -608,7 +608,7 @@ section.news.text-center h4 {
 
 .contact_grid_right input[type="submit"],
 .contact_grid_right input[type="reset"]:hover {
-    background-color: #EA8A95;
+    background-color: #6374ff;
 }
 .contact_grid_right.mt-5.text-center {
     width: 80%;
@@ -644,7 +644,7 @@ ul.social_section_1info a:hover {
 	color:#999;
 }
 .cpy-right p a {
-    color: #ea8a95;
+    color: #6374ff;
 }
 .cpy-right p a:hover{
 	color:#999;
