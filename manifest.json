@@ -1,33 +1,23 @@
 {
-    "dir": "ltr",
-    "lang": "en",
-    "name": "Bhoomin Naik Portfolio",
-    "short_name": "Bhoomin Naik",
-    "scope": "/",
+    "name": "my_portfolio",
+    "short_name": "my_portfolio",
+    "start_url": ".",
     "display": "standalone",
-    "start_url": "/",
-    "background_color": "#FFFFFF",
-    "theme_color": "#FFFFFF",
-    "description": "About an engineer who loves to code",
-    "orientation": "any",
-    "related_applications": [],
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "A new Flutter project.",
+    "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/192.png",
+            "src": "icons/Icon-192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icons/144.png",
-            "sizes": "144x144",
-            "type": "image/png"
-        },
-        {
-            "src": "icons/512.png",
+            "src": "icons/Icon-512.png",
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "url": "https://bhoominn.github.io"
+    ]
 }

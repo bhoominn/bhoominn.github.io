@@ -1,219 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<title>Bhoomin Naik Portfolio</title>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-	<link rel="shortcut icon" href="icons/48.png">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8" />
-	<meta name="keywords"
-		content="Bhoomin Naik, Portfolio, Resume, Bhoomin Naik CV, Bhoomin, Naik, Bhoomin Naik Resume" />
-	<script>
-		addEventListener("load", function () {
-			setTimeout(hideURLbar, 0);
-		}, false);
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
 
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', () => {
-				navigator.serviceWorker.register('/pwabuilder-sw.js')
-					.then((reg) => {
-						console.log('Service worker registered.', reg);
-					});
-			});
-		}
-	</script>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
 
-	<meta name="description" content="About an engineer who loves to code">
-	<meta name="theme-color" content="#FFFFFF" />
-	<link rel='manifest' href='/manifest.json'>
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="css/font-awesome.css">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="my_portfolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-	<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Bhoomin Naik Portfolio</title>
+  <link rel="manifest" href="manifest.json">
 </head>
-
 <body>
-	<!-- header -->
-	<!-- navigation -->
-	<div class="main-top">
-		<header>
-			<div class="container-fluid px-lg-5 ">
-				<nav class="mnu mx-auto">
-					<label for="drop" class="toggle">Menu</label>
-					<input type="checkbox" id="drop">
-					<ul class="menu">
-						<li class="mr-lg-4 mr-3 active"><a href="index.html">Home</a></li>
-						<!-- <li class="mr-lg-4 mr-3"><a href="#about" class="scroll">About Us</a></li> -->
-						<!-- <li class="mr-lg-4 mr-3"><a href="#services" class="scroll">Services</a></li>
-						<li class="mr-lg-4 mr-3"><a href="#work" class="scroll">My Work</a></li> -->
-						<li><a href="#contact" class="scroll">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-	</div>
-	<!-- //navigation-->
-
-	<section class="banner-bottom" id="about">
-		<div class="container">
-			<div class="inner-sec">
-				<div class="row middle-grids">
-					<div class="col-lg-4 advantage-grid-info1">
-						<div class="advantage_left1 text-center">
-							<img src="images/1.JPG" class="img-fluid" alt="">
-						</div>
-					</div>
-					<div class="col-lg-8 advantage-grid-info">
-						<div class="advantage_left">
-							<h1 class="heading text-capitalize mb-sm-5 mb-4">Hi. I'm <span>Bhoomin Naik.</span></h1>
-							<p class="mt-4">💻 Passionate Android & Flutter Developer.</p>
-							<p class="mt-4">I am an avid tech reader and explorer and I love almost all things related
-								to technology. I just love to know what's happening around in the tech industry.</p>
-							<!-- <a href="#services" class="banner-button btn mt-5 scroll">Learn about what i do</a> -->
-							<br />
-							<p class="mt-4">Download My CV</p>
-							<a href="https://drive.google.com/file/d/1QE8fAv1fgh7LqR1od1AkYgc64kmdCCah/view?usp=sharing"
-								target="_blank"><img src="images/resume_qr.png" height="150" /></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- <div class="agileits-services" id="services">
-		<div class="container">
-			<h2 class="heading text-capitalize"> Services </h2>
-			<p class="subs mt-4">Proin ac fermentum est. Cras mi ipsum, consectetur.</p>
-			<div class="agileits-services-row row pt-md-5 pb-5  text-center">
-				<div class="col-lg-4">
-					<div class="agileits-services-grids mt-lg-0 mt-md-0 mt-5">
-						<span class="fa fa-code"></span>
-						<h4 class="mt-4 mb-4">Consectetur</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur.
-						</p>
-
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="agileits-services-grids mt-lg-0 mt-5">
-						<span class="fa fa-copy"></span>
-						<h4 class="mt-4 mb-4">Adipisicing</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur.</p>
-					</div>
-				</div>
-				<div class="col-lg-4  mt-lg-0 mt-5">
-					<div class="agileits-services-grids">
-						<span class="fa fa-diamond"></span>
-						<h4 class="mt-4 mb-4">Sit amet</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eum inventore consectetur.</p>
-					</div>
-				</div>
-			</div>
-			<p class="subs mb-4">Proin ac fermentum est. Cras mi ipsum, consectetur?</p>
-			<a href="#work" class="banner-button btn">My recent work</a>
-		</div>
-	</div> -->
-	<!-- works -->
-	<!-- <section class="news text-center" id="work">
-		<div class="container">
-			<h3 class="heading text-capitalize"> My works </h3>
-			<p class="subs mt-4">Proin ac fermentum est. Cras mi ipsum, consectetur.</p>
-			<div class="row news-grids mt-5">
-				<div class="col-lg-4 col-md-6 newsgrid1">
-					<div class="newsgrid_tp new_grd">
-						<img src="images/g1.jpg" alt="news image" class="img-fluid">
-						<div class="news_bt">
-							<h4>Lorem ipsum</h4>
-							<p class="mt-4"> Nulla pellentesque mi non </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6  newsgrid2">
-					<div class="newsgrid_tp new_grd1">
-						<img src="images/g2.jpg" alt="news image" class="img-fluid">
-						<div class="news_bt">
-							<h4>Dolor sit</h4>
-							<p class="mt-4"> Nulla pellentesque mi non </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6  newsgrid5">
-					<div class="newsgrid_tp new_grd1">
-						<img src="images/g3.jpg" alt="news image" class="img-fluid">
-						<div class="news_bt">
-							<h4>Adipisicing</h4>
-							<p class="mt-4"> Nulla pellentesque mi non </p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-4 col-md-6 mt-md-5 mt-5 newsgrid1">
-					<div class="newsgrid_tp new_grd">
-						<img src="images/g4.jpg" alt="news image" class="img-fluid">
-						<div class="news_bt">
-							<h4>Eius eum </h4>
-							<p class="mt-4"> Nulla pellentesque mi non </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-md-5 mt-5 newsgrid2">
-					<div class="newsgrid_tp new_grd1">
-						<img src="images/g5.jpg" alt="news image" class="img-fluid">
-						<div class="news_bt">
-							<h4>Consectetur</h4>
-							<p class="mt-4"> Nulla pellentesque mi non </p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 mt-md-5 mt-5 newsgrid2">
-					<div class="newsgrid_tp new_grd1">
-						<img src="images/g6.jpg" alt="news image" class="img-fluid">
-						<div class="news_bt">
-							<h4>Pellentesque</h4>
-							<p class="mt-4"> Nulla pellentesque mi non </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- //works -->
-	<!-- contact -->
-	<section class="wedo" id="contact">
-		<div class="container">
-			<h3 class="heading text-capitalize text-white text-center"> Contact </h3>
-			<p class="subs mt-4 text-center"></p>
-
-			<div class="cpy-right text-center">
-				<div class="follow">
-					<ul class="social_section_1info">
-						<li><a target="_blank" href="https://www.linkedin.com/in/bhoomin-naik/"><span
-									class="fa fa-linkedin"></span></a></li>
-						<li><a target="_blank" href="https://github.com/bhoominn"><span class="fa fa-github"></span></a>
-						</li>
-						<li><a target="_blank" href="https://stackoverflow.com/users/8776305"><span
-									class="fa fa-stack-overflow"></span></a></li>
-						<li><a target="_blank" href="https://twitter.com/bhoominnaik"><span
-									class="fa fa-twitter"></span></a></li>
-						<li><a target="_blank" href="mailto:bhoominn@gmail.com"><span class="fa fa-google"></span></a>
-						</li>
-						<li><a target="_blank" href="skype:bhoominnaik"><span class="fa fa-skype"></span></a></li>
-					</ul>
-				</div>
-				<p>© 2020 | All rights reserved | Design by
-					<a href="#"> Bhoomin Naik</a>
-				</p>
-			</div>
-		</div>
-	</section>
-	<!-- //contact -->
-
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=160643657');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
-
 </html>
